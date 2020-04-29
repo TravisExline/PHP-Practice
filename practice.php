@@ -53,3 +53,14 @@ echo strtolower("STRING");
 <!-- str_repeat() takes a string as the first arg. and a number as the second - repeats accordingly -->
 echo str_repeast("string", 2);
 <!-- prints: stringstring -->
+
+
+<!-- SUBSTRINGS -->
+<!-- substr_count() returns the number of instanves of each substring within a string.
+    takes in two args; the string to search(haystack) and the string to search for(needle) -->
+<!-- NOTE: looking for "real" will count words such as "really" -->
+
+$long_string = "I am a long string and I am great!";
+
+echo substr_count($long_string, "I am");
+<!-- prints: 2 -->
