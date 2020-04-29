@@ -33,8 +33,23 @@ function badScope()
 
 $name = Travis;
 echo gettype($name);
+<!-- prints: string -->
 
 <!-- var_dump() takes a variable as an arg and prints DETAILS about that arg -->
 
 var_dump($name);
-<!-- prints string(6) "Travis" -->
+<!-- prints: string(6) "Travis" -->
+
+<!-- strrev() takes in a string as an arg and returns a string in reverse order -->
+
+echo strrev("String");
+<!-- prints: "gnirtS" -->
+
+<!-- strtolower() takes an argument of a string and turns to all lowercase -->
+
+echo strtolower("STRING");
+<!-- prints: string -->
+
+<!-- str_repeat() takes a string as the first arg. and a number as the second - repeats accordingly -->
+echo str_repeast("string", 2);
+<!-- prints: stringstring -->
