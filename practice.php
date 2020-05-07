@@ -113,3 +113,36 @@ array_shift($new_array);
 
 array_unshift($new_array, "z");
 <!-- returns 3 and $new_array becomes [z, b, c] -->
+
+<!-- ASSIGNMENT ARRAYS -->
+<!-- Similar to hashes -->
+
+$new_array = ["key" => "value", "key2" => "value2"];
+
+$new_array["key2"];
+<!-- prints "value2" -->
+$new_array["key3"] = "value3";
+<!-- adds a new key/value pair -->
+
+$new_array["key3"] = "I am value3";
+<!-- changes the values for key3 -->
+
+<!-- unset() will destroy a key/value pair -->
+$new_array = ["key" => "value", "key2" => "value2"];
+unset($new_array["key2"]);
+<!-- removes key2 => value2 -->
+
+<!-- REMEMBER REFERENCE vs VALUE
+When passing by reference(preceded by &), points to the same space in memory; SAME THING! -->
+function exampleRef($array)
+{
+    $array["key"] = "value";
+}
+<!-- will not alter the array passed in_array -->
+
+function exampleRef(&$array)
+{
+    $array["key"] = "value";
+}
+
+<!-- WILL alter  -->
