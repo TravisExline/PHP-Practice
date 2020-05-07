@@ -72,3 +72,5 @@ $new_array = array("a", "b", "c");
 <!-- count(); will count elements in the array and return the length -->
 count($new_array);
 <!-- returns 3 -->
+
+THIS IS A COMMIT TEST!!! DOES IT WORK???????
