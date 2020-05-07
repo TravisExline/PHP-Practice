@@ -64,3 +64,11 @@ $long_string = "I am a long string and I am great!";
 
 echo substr_count($long_string, "I am");
 <!-- prints: 2 -->
+
+<!-- ARRAYS -->
+<!-- array(); creates a new array -->
+$new_array = array("a", "b", "c");
+
+<!-- count(); will count elements in the array and return the length -->
+count($new_array);
+<!-- returns 3 -->
