@@ -66,11 +66,41 @@ echo substr_count($long_string, "I am");
 <!-- prints: 2 -->
 
 <!-- ARRAYS -->
+<!-- access array elements similar to other languages (number codex) -->
 <!-- array(); creates a new array -->
+<!-- can also be created shorthand with brackets [] -->
 $new_array = array("a", "b", "c");
 
 <!-- count(); will count elements in the array and return the length -->
 count($new_array);
 <!-- returns 3 -->
 
-THIS IS A COMMIT TEST!!! DOES IT WORK???????
+<!-- echo will NOT print array contents -->
+<!-- use print_r() -->
+echo $new_array;
+<!-- prints: Array -->
+print_r($new_array);
+
+echo implode(", ", $new_array);
+<!-- separates each element in the array the array with the included string(1st arg) -->
+
+<!-- ADDING AND CHANING ELEMENTS IN AN ARRAY -->
+<!-- Add elements to the end of an array by taking the variable name and appending [], assignment op (=), and element to add -->
+
+$new_array[] = "I'm a new element!";
+
+<!-- we can also change elements explicitly -->
+$new_array[0] = "Changed the element!"
+
+<!-- PUSH AND POP
+array_pop() takes an array as an arg, removes the last element, and returns it.
+array_push() takes an array as first arg and pushes following args to the end of array. (returns number of elements in array) -->
+
+$new_array = array("a", "b", "c");
+array_pop($new_array);
+<!-- returns "c" and $new_array becomes [a, b] -->
+
+array_push($new_array, "z");
+<!-- $new_array becomes [a, b, z] -->
+
+SHIFT AND UNSHIFT
