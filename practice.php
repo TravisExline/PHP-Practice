@@ -103,4 +103,13 @@ array_pop($new_array);
 array_push($new_array, "z");
 <!-- $new_array becomes [a, b, z] -->
 
-SHIFT AND UNSHIFT
+<!-- SHIFT AND UNSHIFT
+array_shift() removes the first element of an array and returns it.
+array_unshift() takes an array as first arg, and following args added to beginning of array. (returns new number of elements in array) -->
+
+$new_array = array("a", "b", "c");
+array_shift($new_array);
+<!-- returns "a" and $new_array becomes [b, c] -->
+
+array_unshift($new_array, "z");
+<!-- returns 3 and $new_array becomes [z, b, c] -->
