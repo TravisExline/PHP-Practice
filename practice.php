@@ -146,3 +146,21 @@ function exampleRef(&$array)
 }
 
 <!-- WILL alter  -->
+
+
+<!-- FORMS! -->
+<!-- Superglobals -->
+<!-- There are automatic global variables ghat are available in all scopes throughout a script
+$_GET - this contains an associative array of variables passed to the current script using query parameters in the URL
+$_POST - this contains an associative array of variables passed to the current script using a form submitted using the “POST” method -->
+
+<!-- Form Handling with GET -->
+<!-- Data would be available via $_GET once the form below is submitted -->
+<!-- the default nethod is GET, so no need to specify... <form> is the same -->
+<form method="get"> <form> is the same
+First name: <input type="text" name="first">
+<br>
+Last name: <input type="text" name="last">
+<br>
+<input type="submit" value="Submit Name">
+</form>
